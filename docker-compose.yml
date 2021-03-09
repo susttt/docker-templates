@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  kodexplorer:
+    image: dennischancs/kodexplorer
+    container_name: kode
+    volumes:
+      - /data/volumes/kode/:/koddata
+    #environment:
+    #  - MYSQL_PASSWORD=root
+    #  - MYSQL_DATABASE=nextcloud
+    #  - MYSQL_USER=root
+    #  - MYSQL_HOST=192.168.50.182
+    ports:
+      - 730:5210
+      - 731:5218
+    restart: unless-stopped
+    
+    
+   
+ 
+
+
